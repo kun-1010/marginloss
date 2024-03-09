@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=5 python tools/train_net.py wandb.enable=True task="medseg" data="busi" model="unet" model.num_classes="2" loss="ce" optim="adam" scheduler="step" wandb.project="unet-busi" optim.lr="0.0001"

@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=4 python tools/train_net.py wandb.enable=False task="medseg" data="brain19" data.batch_size="64" model="unet" model.num_classes="4" model.num_inp_channels="4" loss="ce" optim="adam" scheduler="step" wandb.project="unet-brain" log_period="100" train.max_epoch="100"
